@@ -18,15 +18,15 @@ exports.run=(bot,msg,args) =>{
     return console.error(err.message);
     }
     cit=row.CIT;
+    //console.log(cit);
     
     const embed = new Discord.RichEmbed()
     .setTitle("Maitre Yoda:")
-    .setAuthor("yoda")
-    .setColor(0x00AE86)
+    .setColor(123432)
     .addField(cit)
-    .setFooter
+    .setFooter("SW")
     .setTimestamp()
-    .setImage("http://localhost/8080/home/ziirofan/Document/proj_perso/nodejs/botjs/image/miniyoda.jpg")
+    .setImage("https://i.imgur.com/DOrAP6B.jpg");
     msg.channel.send(embed);
 });
 
